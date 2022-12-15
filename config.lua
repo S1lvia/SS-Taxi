@@ -1,5 +1,8 @@
 Config = {}
 
+Config.AutoUpdates = true -- Auto checks github, for new releases.
+Config.Support = true -- Fixes problems with file names etc.
+
 Config.Marker = true -- Blip on map.
 Config.Ring = true -- Purple ring at Door/PickUps/DropOffs, currently doesnt work.
 

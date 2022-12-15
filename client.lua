@@ -95,7 +95,8 @@ end)
 Citizen.CreateThread(function()
     while true do
         Citizen.Wait(0) -- Waits for 0 ms lol, just needed.
-        if #(pedCoords - pickUpCords) <= 15.0 then
+
+        if startedJob and #(pedCoords - pickUpCords) <= 15.0 then -- doesnt work at all ngl
             DrawMarker(1, pickUpCords.x, pickUpCords.y, pickUpCords.z - 1, 0.0, 0.0, 0.0, 0.0, 180.0, 0.0, 2.0, 2.0, 2.0, 153, 51, 255, 50, false, true, 2.0, nil, nil, false) -- The purple ring.
         else
             Citizen.Wait(2000)
